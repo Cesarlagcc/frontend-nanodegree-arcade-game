@@ -51,6 +51,7 @@ var Player = function(x, y, speed) {
     
 };
 
+//array of for the character images
 var chars= ['images/char-pink-girl.png','images/char-boy.png','images/char-cat-girl.png','images/char-princess-girl.png'];
 var reCh = [];
 
@@ -68,7 +69,7 @@ Player.prototype.update = function(dt) {
         this.x = 0;
     }
 
-    // Check for player reaching top of canvas and winning the game
+    // Checks for player reaching top of canvas and winning the game
     //also puts and alert on the screen to notify the player
     //Also creating a different character after each level is cleared.
     if (this.y < 0) {
@@ -76,9 +77,8 @@ Player.prototype.update = function(dt) {
         this.y = 380;
         alert('You made it across safe!');
         
-
+        //character cycle which ends in the princess character
         for(var i=0; i<chars.length;i++){
-
             console.log(chars[i]);
             this.sprite = chars.shift();
         }
@@ -89,11 +89,11 @@ Player.prototype.update = function(dt) {
 
 };
 
-
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
+//handleInput() method for player
 Player.prototype.handleInput = function(keyPress) {
     switch (keyPress) {
         case 'left':
@@ -116,7 +116,7 @@ Player.prototype.handleInput = function(keyPress) {
 // Place the player object in a variable called player
 var allEnemies = [];
 
-// Position "y" where the enemies will are created
+// Position "y" where the enemies are created
 var enemyPosition = [60, 140, 220];
 var player = new Player(200, 380, 50);
 var enemy;
