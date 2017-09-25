@@ -15,10 +15,8 @@ This is a project intended on using Object Oriented Javascript. The game itself,
 ```
  **or**
 
-
-```
 [Click here to play the game through my live github domain](https://cesarlagcc.github.io/frontend-nanodegree-arcade-game/).	
-```
+
 
 ### Game tips!
 * To Control the character, press the Up, Down, Left, and Right Arrow keys.
