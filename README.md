@@ -9,6 +9,17 @@ For detailed instructions on how to get started, check out this [guide](https://
 
 This is a project intended on using Object Oriented Javascript. The game itself, is played and has the style of the classic frogger game. 
 
+## Getting Started - 
+```
+ After downloading the files, select the index.html file and open up on your preferred web browser.
+```
+ **or**
+
+
+```
+[Click here to play the game through my live github domain](https://cesarlagcc.github.io/frontend-nanodegree-arcade-game/).	
+```
+
 ### Game tips!
 * To Control the character, press the Up, Down, Left, and Right Arrow keys.
 * Safely move across the grid and avoid the enemy bugs to safely cross the other side!
